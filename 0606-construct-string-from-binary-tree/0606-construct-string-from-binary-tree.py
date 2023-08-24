@@ -18,7 +18,6 @@ class Solution:
             if not root.left and root.right:
                 s+= "()"            
             dfs(root.left)
-            #s += "("
             dfs(root.right)
             s += ")"
             return s
